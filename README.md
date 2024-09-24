@@ -1,16 +1,47 @@
-# tugaspraktikum3
+## Tugas Praktikum 3
+Aplikasi ini tentang Bimbingan Konseling untuk Kesehatan Mental Healt
 
-A new Flutter project.
+- [Halaman Login](#halaman-login)
+- [Halaman Utama](#halaman-utama)
+- [Menu Samping](#menu-samping)
+- [Halaman Pengaturan](#halaman-pengaturan)
+- [Halaman Profil](#halaman-profil)
 
-## Getting Started
+## Halaman Login
 
-This project is a starting point for a Flutter application.
+`login_page.dart` memungkinkan pengguna untuk masuk dengan username dan password. 
+- Menggunakan `SharedPreferences` untuk menyimpan username.
+- Menampilkan dialog untuk mengonfirmasi login yang berhasil atau gagal.
 
-A few resources to get you started if this is your first Flutter project:
+## Halaman Utama
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+`home_page.dart` menyambut pengguna setelah login berhasil.
+- Memuat username dari `SharedPreferences`.
+- Menampilkan pesan selamat datang dan informasi pengguna.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Menu Samping
+
+`side_menu.dart` menyediakan navigasi ke berbagai halaman:
+- Menampilkan avatar dan informasi sambutan di `DrawerHeader`.
+- Terdapat opsi navigasi untuk Halaman Utama, Profil, dan Pengaturan.
+
+## Halaman Pengaturan
+
+`setting_page.dart` menampilkan panduan penggunaan aplikasi.
+- Menggunakan layout dengan gradien dan kartu untuk menyampaikan informasi.
+
+## Halaman Profil
+
+`profile_page.dart` menampilkan informasi profil pengguna.
+- Menyediakan struktur yang mirip dengan halaman pengaturan, menampilkan detail pengguna.
+
+## Kesimpulan
+
+Aplikasi ini memberikan struktur dasar untuk autentikasi pengguna dan navigasi dalam Flutter. 
+
+## Screenshot
+![Lampiran Login](login_page.png)
+![Lampiran Home](home_page.png)
+![Lampiran Side Menu](side_menu.png)
+![Lampiran Profile](profile_page.png)
+![Lampiran Setting](setting_page.png)
